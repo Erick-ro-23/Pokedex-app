@@ -1,8 +1,11 @@
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { FavoriteScreen } from '../screens/Favorite';
-import { PokedexScreen } from '../screens/Pokedex';
-import { Account } from '../screens/Account';
+// import { NavigationContainer } from '@react-navigation/native';
+
+//Screens
+import FavoriteScreen from '../screens/Favorite';
+import PokedexScreen from '../screens/Pokedex';
+import Account from '../screens/Account';
 
 
 const Tab = createBottomTabNavigator();
