@@ -9,6 +9,8 @@ import FavoriteScreen from '../screens/Favorite';
 import PokedexScreen from '../screens/Pokedex';
 import PokedexNavitagion from './PokedexNavitagion';
 import Account from '../screens/Account';
+import PokemonScreem from '../screens/Pokemon';
+
 
 
 const Tab = createBottomTabNavigator();
@@ -20,7 +22,7 @@ export default function Navigation() {
                 tabBarLabel: "Favoritos",
                 tabBarIcon: ({color, size}) => <Icon name="heart" color= {color} size={size}/>,
                 headerTitle: "Favoritos"}}/>
-            <Tab.Screen name='Pokedex' component={PokedexNavitagion} options={{
+            <Tab.Screen name='Pokedex' component={PokemonScreem} options={{
                 tabBarLabel: "",
                 tabBarIcon: () => renderPokeball(),
                 
