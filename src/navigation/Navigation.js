@@ -22,7 +22,7 @@ export default function Navigation() {
                 tabBarLabel: "Favoritos",
                 tabBarIcon: ({color, size}) => <Icon name="heart" color= {color} size={size}/>,
                 headerTitle: "Favoritos"}}/>
-            <Tab.Screen name='Pokedex' component={PokemonScreem} options={{
+            <Tab.Screen name='PokedexXx' component={PokedexNavitagion} options={{
                 tabBarLabel: "",
                 tabBarIcon: () => renderPokeball(),
                 
@@ -42,5 +42,5 @@ function renderPokeball() {
         source={require("../assets/pokeball.png")}
         style={{ width: 75, height: 75, top: -15 }}
         />
-    );;
+    );
 }

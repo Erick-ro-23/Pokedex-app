@@ -1,17 +1,16 @@
-import React from 'react';
+import React from "react";
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
-import PokedexScreem from '../screens/Pokedex';
-import PokemonScreem from '../screens/Pokemon';
-
+// import { createStackNavigator } from "@react-navigation/stack";
+import PokedexScreen from "../screens/Pokedex";
+import PokemonScreen from "../screens/Pokemon";
 
 const Stack = createNativeStackNavigator();
-//en la version 6 de react navigation NO hace falta esto!
-//solo hace falta poner heartTitle
-export default function PokedexNavitagion() {
+
+export default function PokedexNavigation() {
   return (
-  <Stack.Navigator>
-    {/* <Stack.Screen name='Pokedex' component={PokedexScreem}/> */}
-    <Stack.Screen name='Pokemon' component={PokemonScreem}/>
-  </Stack.Navigator>
-  )
+    <Stack.Navigator>
+      <Stack.Screen name="Pokedex" component={PokedexScreen} />
+      <Stack.Screen name="Pokemon" component={PokemonScreen} />
+    </Stack.Navigator>
+  );
 }
