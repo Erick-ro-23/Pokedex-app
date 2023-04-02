@@ -13,7 +13,7 @@ export default function PokemonCard(props) {
   const goToPokemon = () => {
     console.log(`Vamos al pokemon: ${pokemon.name}` )
   }
-  console.log(pokemon);
+  // console.log(pokemon);
 
   return (
     <TouchableWithoutFeedback onPress={goToPokemon}>
