@@ -18,8 +18,8 @@ export default function Pokedex() {
   const loadPokemons = async () => {
     try {
       const response = await getPokemonsApi(nextUrl);
-      console.log(response.count);
       setNextUrl(response.next);
+      console.log(response.count);
    
 
       const pokemonsArray = [];
