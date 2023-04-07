@@ -20,7 +20,6 @@ export default function Pokedex() {
       const response = await getPokemonsApi(nextUrl);
       setNextUrl(response.next);
       console.log(response.count);
-   
 
       const pokemonsArray = [];
       for await (const pokemon of response.results) {
