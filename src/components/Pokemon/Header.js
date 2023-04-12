@@ -9,19 +9,19 @@ export default function Header(props) {
     // console.log(props);
 const bgStyle = {backgroundColor: color, ...styles.bg}
 
-  return (
-    <>
-        <View style={bgStyle} />
-            <SafeAreaView style= {styles.content}>
-                <View style= {styles.header}>
-                <Text style= {styles.name}>{capitalize(name)}</Text>
-                <Text style= {styles.order}>#{`${order}`.padStart(3,0)}</Text>
-                </View>
-                <View stule= {styles.contentImg}>
-                    <Image source={{uri:image}} style= {styles.image}/>
-                </View>
-            </SafeAreaView>
-    </> 
+    return (
+        <>
+            <View style={bgStyle} />            
+                <SafeAreaView style= {styles.content}>
+                    <View style= {styles.header}>
+                    <Text style= {styles.name}>{capitalize(name)}</Text>
+                    <Text style= {styles.order}>#{`${order}`.padStart(3,0)}</Text>
+                    </View>
+                    <View stule= {styles.contentImg}>
+                        <Image source={{uri:image}} style= {styles.image}/>
+                    </View>
+                </SafeAreaView>
+        </> 
     )
 }
 
